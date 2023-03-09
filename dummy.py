@@ -1,3 +1,3 @@
 import platform
 
-print(f"Hello from {platform.system()}")
+print("Hello from", platform.system())
