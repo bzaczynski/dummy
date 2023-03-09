@@ -9,11 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout the code
-      uses: actions/checkout@v3
+    #- name: Checkout the code
+    #  uses: actions/checkout@v3
+    - run: python dummy.py
       
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag dummy:latest
+    #- name: Build the Docker image
+    #  run: docker build . --file Dockerfile --tag dummy:latest
       
-    - name: Run the container
-      run: docker run --rm dummy
+    #- name: Run the container
+    #  run: docker run --rm dummy
