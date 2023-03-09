@@ -13,6 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag dummy:$(date +%s)
+      #run: docker build . --file Dockerfile --tag dummy:$(date +%s)
+      run: docker build . --file Dockerfile --tag dummy:latest
     - name: Run
       run: docker run --rm dummy
