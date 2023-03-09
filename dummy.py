@@ -1,1 +1,3 @@
-print("Hello world")
+import platform
+
+print(f"Hello from {platform.system()}")
